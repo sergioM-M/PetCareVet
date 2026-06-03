@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/petsListFragment" android:icon="@android:drawable/ic_menu_agenda" android:title="@string/menu_mascotas" />
+        <item android:id="@+id/catApiFragment" android:icon="@android:drawable/ic_menu_gallery" android:title="@string/menu_gatos_api" />
+        <item android:id="@+id/profileFragment" android:icon="@android:drawable/ic_menu_myplaces" android:title="@string/menu_perfil" />
+        <item android:id="@+id/aboutFragment" android:icon="@android:drawable/ic_menu_info_details" android:title="@string/menu_acerca" />
+    </group>
+</menu>

@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.PetCareVet" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/vet_primary</item>
+        <item name="colorPrimaryDark">@color/vet_primary_dark</item>
+        <item name="colorAccent">@color/vet_accent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+</resources>

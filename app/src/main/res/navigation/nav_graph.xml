@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.petcarevet.ui.profile.LoginFragment"
+        android:label="Acceso"
+        tools:layout="@layout/fragment_login"
+        xmlns:tools="http://schemas.android.com/tools">
+        <action
+            android:id="@+id/action_loginFragment_to_petsListFragment"
+            app:destination="@id/petsListFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/petsListFragment"
+        android:name="com.example.petcarevet.ui.pets.list.PetsListFragment"
+        android:label="Mascotas">
+        <action
+            android:id="@+id/action_petsListFragment_to_petDetailFragment"
+            app:destination="@id/petDetailFragment" />
+        <action
+            android:id="@+id/action_petsListFragment_to_petFormFragment"
+            app:destination="@id/petFormFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/petDetailFragment"
+        android:name="com.example.petcarevet.ui.pets.detail.PetDetailFragment"
+        android:label="Detalle">
+        <argument
+            android:name="petId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_petDetailFragment_to_petFormFragment"
+            app:destination="@id/petFormFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/petFormFragment"
+        android:name="com.example.petcarevet.ui.pets.form.PetFormFragment"
+        android:label="Formulario">
+        <argument
+            android:name="petId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/catApiFragment"
+        android:name="com.example.petcarevet.ui.cats.CatApiFragment"
+        android:label="Gatos API" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.petcarevet.ui.profile.ProfileFragment"
+        android:label="Perfil" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.petcarevet.ui.about.AboutFragment"
+        android:label="Acerca de" />
+</navigation>

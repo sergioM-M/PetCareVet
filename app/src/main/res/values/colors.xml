@@ -1,0 +1,8 @@
+<resources>
+    <color name="vet_primary">#1B8A5A</color>
+    <color name="vet_primary_dark">#0E5C3C</color>
+    <color name="vet_accent">#F2B84B</color>
+    <color name="vet_background">#87FFC3</color>
+    <color name="vet_surface">#FFFFFF</color>
+    <color name="vet_text">#26332D</color>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PetCare Vet</string>
+    <string name="menu_mascotas">Mascotas</string>
+    <string name="menu_gatos_api">Gatos API</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_acerca">Acerca de</string>
+</resources>

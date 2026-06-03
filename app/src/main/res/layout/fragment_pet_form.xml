@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/txtFormTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/vet_primary_dark"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la mascota"
+            android:inputType="textPersonName"
+            android:layout_marginTop="18dp" />
+
+        <RadioGroup
+            android:id="@+id/radioType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radioDog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perro" />
+
+            <RadioButton
+                android:id="@+id/radioCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gato" />
+        </RadioGroup>
+
+
+
+        <EditText
+            android:id="@+id/inputCare"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Descripción de cuidados"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/inputImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="URL de imagen"
+            android:inputType="textUri"
+            android:layout_marginTop="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSavePet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Guardar"
+            android:layout_marginTop="22dp" />
+    </LinearLayout>
+</ScrollView>
